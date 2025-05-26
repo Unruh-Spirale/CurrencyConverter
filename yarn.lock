@@ -621,6 +621,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/tdesign@npm:^1.2.8":
+  version: 1.2.8
+  resolution: "@iconify-json/tdesign@npm:1.2.8"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/593cdf2e0485b7f650cff50ee8bf1fa26f1496e0071bf10780a33c067d5a6edb565b9da437a15785faa919d4516399a67a8824d9f5d43e675f7cb2063766dea7
+  languageName: node
+  linkType: hard
+
 "@iconify/collections@npm:^1.0.536":
   version: 1.0.547
   resolution: "@iconify/collections@npm:1.0.547"
@@ -6884,6 +6893,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nuxt-app@workspace:."
   dependencies:
+    "@iconify-json/tdesign": "npm:^1.2.8"
     "@nuxt/ui": "npm:^3.1.1"
     "@tailwindcss/vite": "npm:^4.1.6"
     nuxt: "npm:^3.17.2"
