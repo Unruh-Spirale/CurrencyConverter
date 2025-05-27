@@ -1,11 +1,11 @@
 <script setup lang="ts">
-    definePageMeta({
-        layout: 'header-layout'
-    })
+
 </script>
 
 <template>
-    <CurrencyUsd />
+    <div>
+        <Currency code="usd" icon="i-circle-flags-us"/>
+    </div>
 </template>
 
 <style scoped>

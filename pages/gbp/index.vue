@@ -5,9 +5,7 @@
 </script>
 
 <template>
-    <div>
-
-    </div>
+    <CurrencyGbp />
 </template>
 
 <style scoped>

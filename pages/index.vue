@@ -5,9 +5,7 @@
 </script>
 
 <template>
-    <div>
-
-    </div>
+    <Dashboard />
 </template>
 
 <style scoped>
