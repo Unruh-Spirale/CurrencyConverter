@@ -58,34 +58,16 @@
         <div class="flex items-center gap-2">
             <div class="grid gap-2">
                 <UButtonGroup>
-                    <UBadge color="neutral" variant="outline" size="lg" :label="code" :ui="{base: 'border-1', label: 'uppercase'}"/>
+                    <UBadge color="neutral" variant="outline" size="lg" :label="code" :ui="{base: 'border-1 w-12', label: 'uppercase'}"/>
                     <UInput v-model.number="convertCurrencyToPln" color="neutral" variant="outline" @input="validate"/>
                 </UButtonGroup>
                 <UButtonGroup>
-                    <UBadge color="neutral" variant="outline" size="lg" :label="pln" :ui="{base: 'border-1'}"/>
+                    <UBadge color="neutral" variant="outline" size="lg" :label="pln" :ui="{base: 'border-1 w-12'}"/>
                     <UInput v-model.number="convertPlnToCurrency" color="neutral" variant="outline" @input="validate"/>
                 </UButtonGroup>
             </div>
             <UIcon :name="icon" class="size-17 flex-none"/>
-            <UTable :data="data" class="grow"/>
-
-
-
+            <UTable :data="data" class="grow" :ui="{th: 'text-start min-w-[80px]', td: 'text-start'}"/>
         </div>
-<!-- 
-        <div class="flex justify-center gap-4 pt-3 ">
-            <UButtonGroup>
-                <UInput color="neutral" variant="outline" />
-                <UBadge color="neutral" variant="outline" size="lg" :label="code" :ui="{label: 'uppercase'}"/>
-            </UButtonGroup>
-            <UButtonGroup>
-                <UInput color="neutral" variant="outline" />
-                <UBadge color="neutral" variant="outline" size="lg" :label="pln" />
-            </UButtonGroup>
-        </div> -->
     </div>
 </template>
-
-<style scoped>
-
-</style>
