@@ -1,6 +1,5 @@
 <script setup lang="ts">
-    import type { CurrencyBuySell, Rate } from "~/types/currency";
-
+    import type { CurrencyBuySell} from "~/types/currency";
 
     const props = defineProps<{
         code: string;

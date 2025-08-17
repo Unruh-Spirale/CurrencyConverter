@@ -42,7 +42,7 @@
         }
     });
 
-    function validate(e) {
+    function validate(e: any) {
         const val = e.target.value.replace(",",".");
         if (!/^\d*\.?\d*$/.test(val)) {
             e.target.value = inputValue.value;
