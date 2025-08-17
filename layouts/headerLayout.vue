@@ -1,5 +1,18 @@
 <script setup lang="ts">
 
+type navSpecs = {
+    route: string;
+    label: string;
+    icon: string;
+}
+
+const buttonNavs: navSpecs[] = [
+    {route: "/eur", label: "eur", icon: "i-circle-flags-european-union"},
+    {route: "/usd", label: "usd", icon: "i-circle-flags-us"},
+    {route: "/chf", label: "chf", icon: "i-circle-flags-ch"},
+    {route: "/gbp", label: "gbp", icon: "i-circle-flags-gb"}
+]
+
 </script>
 
 <template>
@@ -13,48 +26,15 @@
         <div class="grid grid-cols-14 pt-8">
             <nav>
                 <ul class="grid gap-4 uppercase">
-                    <li>
-                        <NuxtLink to="/eur">
+                    <li v-for="nav in buttonNavs">
+                        <NuxtLink :to="nav.route">
                             <UButton
-                                label="eur"
+                                :label="nav.label"
                                 variant="ghost"
                                 color="neutral"
                                 size="xl"
-                                icon="i-circle-flags-european-union"
-                                :ui="{label: 'uppercase'}"
-                            />
-                        </NuxtLink>
-                    </li>
-                    <li><NuxtLink to="/usd">
-                            <UButton
-                                label="usd"
-                                variant="ghost"
-                                color="neutral"
-                                size="xl"
-                                icon="i-circle-flags-us"
-                                :ui="{label: 'uppercase'}"
-                            />
-                        </NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink to="/chf">
-                            <UButton
-                                label="chf"
-                                variant="ghost"
-                                color="neutral"
-                                size="xl"
-                                icon="i-circle-flags-ch"
-                                :ui="{label: 'uppercase'}"
-                            />
-                        </NuxtLink>
-                    </li>
-                    <li><NuxtLink to="/gbp">
-                            <UButton
-                                label="gbp"
-                                variant="ghost"
-                                color="neutral"
-                                size="xl"
-                                icon="i-circle-flags-gb"
+                                :icon="nav.icon"
+                                class="w-full"
                                 :ui="{label: 'uppercase'}"
                             />
                         </NuxtLink>
