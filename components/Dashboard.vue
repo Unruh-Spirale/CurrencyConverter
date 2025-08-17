@@ -6,7 +6,7 @@
         {code: "usd", icon: "i-circle-flags-us"},
         {code: "chf", icon: "i-circle-flags-ch"},
         {code: "gbp", icon: "i-circle-flags-gb"},
-    ]
+    ];
 
 </script>
 

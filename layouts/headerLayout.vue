@@ -1,17 +1,17 @@
 <script setup lang="ts">
 
-type navSpecs = {
-    route: string;
-    label: string;
-    icon: string;
-}
+    type navSpecs = {
+        route: string;
+        label: string;
+        icon: string;
+    }
 
-const buttonNavs: navSpecs[] = [
-    {route: "/eur", label: "eur", icon: "i-circle-flags-european-union"},
-    {route: "/usd", label: "usd", icon: "i-circle-flags-us"},
-    {route: "/chf", label: "chf", icon: "i-circle-flags-ch"},
-    {route: "/gbp", label: "gbp", icon: "i-circle-flags-gb"}
-]
+    const buttonNavs: navSpecs[] = [
+        {route: "/eur", label: "eur", icon: "i-circle-flags-european-union"},
+        {route: "/usd", label: "usd", icon: "i-circle-flags-us"},
+        {route: "/chf", label: "chf", icon: "i-circle-flags-ch"},
+        {route: "/gbp", label: "gbp", icon: "i-circle-flags-gb"}
+    ];
 
 </script>
 

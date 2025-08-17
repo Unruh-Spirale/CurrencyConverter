@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import type { CurrencyBuySell } from '~/types/currency'
+    import type { CurrencyBuySell } from "~/types/currency";
 
     const props = defineProps<{
         code: string;
@@ -8,10 +8,10 @@
 
     const pln: string = "PLN";
     const uriCurrency: string = `http://api.nbp.pl/api/exchangerates/rates/c/${props.code}/?format=json`;
-    const uriCurrencyMid: string = `https://api.nbp.pl/api/exchangerates/rates/a/${props.code}/`
+    const uriCurrencyMid: string = `https://api.nbp.pl/api/exchangerates/rates/a/${props.code}/`;
 
-    const {data: currency} = await useFetch<CurrencyBuySell>(uriCurrency)
-    const {data: currencyMid} = await useFetch<CurrencyBuySell>(uriCurrencyMid)
+    const {data: currency} = await useFetch<CurrencyBuySell>(uriCurrency);
+    const {data: currencyMid} = await useFetch<CurrencyBuySell>(uriCurrencyMid);
 
     const data = ref([
         {
@@ -19,37 +19,37 @@
             sell: currency.value?.rates[0].ask,
             average: currencyMid.value?.rates[0].mid
         }
-    ])
+    ]);
 
-    const source = ref("eur")
+    const source = ref("eur");
     const inputValue = ref<number>(0);
     const convertCurrencyToPln = computed<number>({
         get(): number {
-            return source.value === "eur" ? inputValue.value : +(convertPlnToCurrency.value / (currency.value?.rates[0].ask ?? 0)).toFixed(2)
+            return source.value === "eur" ? inputValue.value : +(convertPlnToCurrency.value / (currency.value?.rates[0].ask ?? 0)).toFixed(2);
         },
         set(val): void {
-            source.value = "eur"
-            inputValue.value = val
+            source.value = "eur";
+            inputValue.value = val;
         }
-    })
+    });
     const convertPlnToCurrency = computed({
         get(): number {
-            return source.value === "pln" ? inputValue.value : +(convertCurrencyToPln.value * (currency.value?.rates[0].bid ?? 0)).toFixed(2)
+            return source.value === "pln" ? inputValue.value : +(convertCurrencyToPln.value * (currency.value?.rates[0].bid ?? 0)).toFixed(2);
         },
         set(val): void {
-            source.value = "pln"
-            inputValue.value = val
+            source.value = "pln";
+            inputValue.value = val;
         }
-    })
+    });
 
     function validate(e) {
-        const val = e.target.value.replace(',','.');
+        const val = e.target.value.replace(",",".");
         if (!/^\d*\.?\d*$/.test(val)) {
             e.target.value = inputValue.value;
         } else {
             e.target.value = val;
             inputValue.value = val;
-  }
+        }
     }
 </script>
 
@@ -69,5 +69,5 @@
             <UIcon :name="icon" class="size-17 flex-none"/>
             <UTable :data="data" class="grow" :ui="{th: 'text-start min-w-[80px]', td: 'text-start'}"/>
         </div>
-    </div>
+    </div> 
 </template>
