@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": ["source.fixAll.eslint"],
+    "eslint.probe": ["javascript", "typescript", "vue"],
+    "eslint.validate": ["javascript", "typescript", "vue"],
+    "eslint.workingDirectories": ["."]
+}
