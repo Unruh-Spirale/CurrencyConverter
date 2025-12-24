@@ -9697,7 +9697,7 @@ __metadata:
     eslint: "npm:^9.33.0"
     eslint-plugin-vue: "npm:^10.4.0"
     nuxt: "npm:^3.17.2"
-    nuxt-charts: "npm:^0.2.3"
+    nuxt-charts: "npm:^1.0.2"
     tailwindcss: "npm:^4.1.6"
     typescript: "npm:^5.8.3"
     vue: "npm:^3.5.13"
@@ -9706,15 +9706,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"nuxt-charts@npm:^0.2.3":
-  version: 0.2.3
-  resolution: "nuxt-charts@npm:0.2.3"
+"nuxt-charts@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "nuxt-charts@npm:1.0.2"
   dependencies:
     "@nuxt/kit": "npm:^3.17.7"
     "@unovis/ts": "npm:^1.5.2"
     "@unovis/vue": "npm:^1.5.2"
-    vue-chrts: "npm:^0.2.2"
-  checksum: 10c0/212bec42461baf9f17f914d3b673644c8b4f0b3282aae1813308d2af2b61edabc56337bb88a7438513617ba6a6a698303cf582e4ce3a8cc359f7dc0307911eef
+    vue-chrts: "npm:1.0.0"
+  checksum: 10c0/4964582e7b3d7493661cd4eb6944ba1c7157428cce1a281197cd13691984cf6e9b3fee1dc0a595f39a2cb4624a20c073b419d66208222f48e63c487ac2fd8c80
   languageName: node
   linkType: hard
 
@@ -13059,12 +13059,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-chrts@npm:^0.2.2":
-  version: 0.2.3
-  resolution: "vue-chrts@npm:0.2.3"
+"vue-chrts@npm:1.0.0":
+  version: 1.0.0
+  resolution: "vue-chrts@npm:1.0.0"
   peerDependencies:
     vue: ^3.5.13
-  checksum: 10c0/52dd5c9ab9b7f605d8bee421137c1e1d0592f820cd6314f84a5aca8d39dd016d9ae797e69a9f0075dc5433902241184bc8988d18733c6990572a7a1e27b7f5f0
+  checksum: 10c0/21f1ca6b7adc50bf6f520a215a89440f302377b94896ecc6c60d9b7fec8a3b97f70fb5dfa30702c380693ea86259aa282b5ed3bc7a297b85a93b761790683adb
   languageName: node
   linkType: hard
 

@@ -16,7 +16,7 @@
 </script>
 
 <template>
-    <div class="ms-20">
+    <div class="mx-10">
         <header class="pt-8">
             <NuxtLink to="/" class="flex">
                 <UIcon name="i-tdesign-currency-exchange" class="size-12" />

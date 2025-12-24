@@ -15,9 +15,6 @@
     }
 
     const chartData = computed<ChartDataItem[]>(() => {
-        if(currencyEur90 === undefined || currencyUsd90 === undefined || currencyChf90 === undefined || currencyGbp90 === undefined) {
-            return [];
-        };
         const allDates = new Set<string>();
 
         currencyEur90.value?.rates.forEach(rate => allDates.add(rate.effectiveDate));
@@ -50,26 +47,46 @@
         gbp: {name: "GBP", color: "#0000ff"}
     };
 
-    const xFormatter = (i: number): string | number => `${chartData.value[i]?.effectiveDate}`;
+    // const xFormatter = (i: number): string | number => `${chartData.value[i]?.effectiveDate}`;
+    const xFormatter = (tick: number): string => {
+        return chartData.value[tick]?.effectiveDate;
+    };
+    const xAxisConfig = {
+        tickTextAlign: "right" as const,
+        tickTextAngle: -45
+    };
+    const yDomain = computed<[number | undefined, number | undefined]>(() => {
+        const values: number[] = chartData.value
+            .flatMap(item => [item.eur, item.usd, item.chf, item.gbp])
+            .filter((value): value is number => value !== undefined && value !== null && value !== 0);
+        
+        if (values.length === 0) return [undefined, undefined];
+        
+        const min = Math.min(...values);
+        const max = Math.max(...values);
+        
+        return [min, max];
+    });
 </script>
 
 <template>
-    <div class="pt-10">
-        <LineChart
-            :data="chartData"
-            :height="300"
-            x-label="Date"
-            y-label="Rate"
-            :x-num-ticks="10"
-            :categories="categories"
-            :x-formatter="xFormatter"
-            :curve-type="CurveType.MonotoneX"
-            :legend-position="LegendPosition.Top"
-            :hide-legend="false"
-            :x-domain-line="true"
-            :y-domain-line="true"
-            :x-tick-line="true"
-            :y-tick-line="true"
-        />
-    </div> 
+    <LineChart
+        :data="chartData"
+        :height="450"
+        x-label="Date"
+        y-label="Rate"
+        :x-num-ticks="10"
+        :categories="categories"
+        :xFormatter="xFormatter"
+        :curve-type="CurveType.MonotoneX"
+        :legend-position="LegendPosition.TopCenter"
+        :hide-legend="false"
+        :x-domain-line="true"
+        :y-domain-line="true"
+        :x-tick-line="true"
+        :y-tick-line="true"
+        :y-grid-line="true"
+        :xAxisConfig="xAxisConfig"
+        :yDomain="yDomain"
+    />
 </template>

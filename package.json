@@ -26,7 +26,7 @@
     "@unovis/ts": "^1.6.0",
     "eslint": "^9.33.0",
     "eslint-plugin-vue": "^10.4.0",
-    "nuxt-charts": "^0.2.3",
+    "nuxt-charts": "^1.0.2",
     "tailwindcss": "^4.1.6",
     "typescript": "^5.8.3",
     "vue-eslint-parser": "^10.2.0"

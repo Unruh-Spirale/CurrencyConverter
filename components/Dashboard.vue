@@ -11,12 +11,17 @@
 </script>
 
 <template>
-    <div v-for="currency in currencies">
-        <Currency :code="currency.code" :icon="currency.icon" />
+    <div class="flex gap-4">
+        <div class="flex flex-col gap-4">
+            <div v-for="currency in currencies">
+                <Currency :code="currency.code" :icon="currency.icon" />
+            </div>
+        </div>
+        <div class="flex-1">
+            <CurrencyAllCurrenciesChart/>
+        </div>
     </div>
-    <div>
-        <CurrencyAllCurrenciesChart/>
-    </div>
+
 </template>
 
 <style scoped>
