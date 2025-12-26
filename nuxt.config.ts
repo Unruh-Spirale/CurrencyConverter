@@ -11,5 +11,10 @@ export default defineNuxtConfig({
         plugins: [
             tailwindcss(),
         ]
+    },
+    ssr: false,
+    app: {
+        baseURL: process.env.BASE_URL || (process.env.NODE_ENV === "production" ? "/CurrencyConverter/" : "/"),
+        buildAssetsDir: "/_nuxt/"
     }
 });
