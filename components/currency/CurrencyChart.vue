@@ -8,7 +8,7 @@
     }>();
 
     const range = ref<number>(30);
-    const uri = computed(() => `http://api.nbp.pl/api/exchangerates/rates/a/${props.code}/last/${range.value}/?format=json`);
+    const uri = computed(() => `https://api.nbp.pl/api/exchangerates/rates/a/${props.code}/last/${range.value}/?format=json`);
 
     const {data: currencyPerDays, refresh } = await useFetch<CurrencyBuySell>(()=>uri.value);
 

@@ -1,0 +1,1 @@
+import{_ as n}from"./9MBneptb.js";import{_ as r}from"./BfgheqGj.js";import{f as s,c as t,b as o,F as a,o as _}from"./QTb3r3zx.js";const d=s({__name:"index",setup(m){return(u,i)=>{const e=n,c=r;return _(),t(a,null,[o(e,{code:"usd",icon:"i-circle-flags-us"}),o(c,{code:"usd",color:"#008000","color-button":"success"})],64)}}});export{d as default};

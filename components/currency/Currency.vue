@@ -7,7 +7,7 @@
     }>();
 
     const pln: string = "PLN";
-    const uriCurrency: string = `http://api.nbp.pl/api/exchangerates/rates/c/${props.code}/?format=json`;
+    const uriCurrency: string = `https://api.nbp.pl/api/exchangerates/rates/c/${props.code}/?format=json`;
     const uriCurrencyMid: string = `https://api.nbp.pl/api/exchangerates/rates/a/${props.code}/`;
 
     const {data: currency} = await useFetch<CurrencyBuySell>(uriCurrency);

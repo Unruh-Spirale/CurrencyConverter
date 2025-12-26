@@ -1,0 +1,1 @@
+import{_ as r}from"./9MBneptb.js";import{_ as c}from"./BfgheqGj.js";import{f as a,c as t,b as o,F as _,o as s}from"./QTb3r3zx.js";const d=a({__name:"index",setup(m){return(i,p)=>{const e=r,n=c;return s(),t(_,null,[o(e,{code:"eur",icon:"i-circle-flags-european-union"}),o(n,{code:"eur",color:"#f5a623","color-button":"warning"})],64)}}});export{d as default};

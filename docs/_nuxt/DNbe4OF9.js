@@ -1,0 +1,1 @@
+import{_ as r}from"./9MBneptb.js";import{_ as n}from"./BfgheqGj.js";import{f as t,c as a,b as o,F as _,o as s}from"./QTb3r3zx.js";const d=t({__name:"index",setup(m){return(f,i)=>{const c=r,e=n;return s(),a(_,null,[o(c,{code:"chf",icon:"i-circle-flags-ch"}),o(e,{code:"chf",color:"#ff0000","color-button":"error"})],64)}}});export{d as default};

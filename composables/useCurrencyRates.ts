@@ -4,7 +4,7 @@ import type { Ref } from "vue";
 export const useCurrencyRates = async (currencies: string[] = ["eur", "usd", "chf", "gbp"], days: number = 90) => {
     const currencyData = await Promise.all(
         currencies.map(currency => 
-            useFetch<CurrencyBuySell>(`http://api.nbp.pl/api/exchangerates/rates/a/${currency}/last/${days}/?format=json`)
+            useFetch<CurrencyBuySell>(`https://api.nbp.pl/api/exchangerates/rates/a/${currency}/last/${days}/?format=json`)
         )
     );
 
