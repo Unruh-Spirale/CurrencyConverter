@@ -16,5 +16,10 @@ export default defineNuxtConfig({
     app: {
         baseURL: process.env.BASE_URL || (process.env.NODE_ENV === "production" ? "/CurrencyConverter/" : "/"),
         buildAssetsDir: "/_nuxt/"
+    },
+    router: {
+        options: {
+            hashMode: false
+        }
     }
 });
