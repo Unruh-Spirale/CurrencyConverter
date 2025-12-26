@@ -1880,7 +1880,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.18.1, @nuxt/kit@npm:^3.13.2, @nuxt/kit@npm:^3.15.4, @nuxt/kit@npm:^3.17.3, @nuxt/kit@npm:^3.17.5, @nuxt/kit@npm:^3.17.6, @nuxt/kit@npm:^3.17.7":
+"@nuxt/kit@npm:3.18.1, @nuxt/kit@npm:^3.13.2, @nuxt/kit@npm:^3.15.4, @nuxt/kit@npm:^3.17.3, @nuxt/kit@npm:^3.17.5, @nuxt/kit@npm:^3.17.6":
   version: 3.18.1
   resolution: "@nuxt/kit@npm:3.18.1"
   dependencies:
@@ -3887,9 +3887,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unovis/ts@npm:^1.5.2, @unovis/ts@npm:^1.6.0":
-  version: 1.6.0
-  resolution: "@unovis/ts@npm:1.6.0"
+"@unovis/ts@npm:^1.6.2":
+  version: 1.6.2
+  resolution: "@unovis/ts@npm:1.6.2"
   dependencies:
     "@emotion/css": "npm:^11.7.1"
     "@juggle/resize-observer": "npm:^3.3.1"
@@ -3923,17 +3923,17 @@ __metadata:
     to-px: "npm:^1.1.0"
     topojson-client: "npm:^3.1.0"
     tslib: "npm:^2.3.1"
-  checksum: 10c0/32b3687fcb94ca8ca50920f42b76ce8298dd2c84241e742dffbf8dfedb7e109b4943ffab23f835f55d48b67265a0be93dade7a172c4678e113773c088495c895
+  checksum: 10c0/46874a693b24b427f93419015fcea50047ba15550cfe2ad8fb2421d4c62229c6d39e1abb5425fed2bfb436ec64fd35f09ee8bdaff1ae0b2a54ac5e04ed1339aa
   languageName: node
   linkType: hard
 
-"@unovis/vue@npm:^1.5.2":
-  version: 1.6.0
-  resolution: "@unovis/vue@npm:1.6.0"
+"@unovis/vue@npm:^1.6.2":
+  version: 1.6.2
+  resolution: "@unovis/vue@npm:1.6.2"
   peerDependencies:
-    "@unovis/ts": 1.6.0
+    "@unovis/ts": 1.6.2
     vue: ^3
-  checksum: 10c0/5646b447b977035f2c7aa892bd23f357d970b5c2157217f915676193c73a2d80cc70aae89e68b815313e649542ea863586651312e2f1b1c8bbd2cd16c6f1d250
+  checksum: 10c0/456f3e3ef2a53391867b8c0f59e42a3be81ca569e33b94d2fcc78102890f96eed556ebfb9f9aaf4bf58d29a744adf54a353b54f7bd158a37d02d58d4a098ae51
   languageName: node
   linkType: hard
 
@@ -9693,11 +9693,11 @@ __metadata:
     "@tailwindcss/vite": "npm:^4.1.6"
     "@typescript-eslint/eslint-plugin": "npm:^8.39.1"
     "@typescript-eslint/parser": "npm:^8.39.1"
-    "@unovis/ts": "npm:^1.6.0"
+    "@unovis/ts": "npm:^1.6.2"
     eslint: "npm:^9.33.0"
     eslint-plugin-vue: "npm:^10.4.0"
     nuxt: "npm:^3.17.2"
-    nuxt-charts: "npm:^1.0.2"
+    nuxt-charts: "npm:^2.0.0"
     tailwindcss: "npm:^4.1.6"
     typescript: "npm:^5.8.3"
     vue: "npm:^3.5.13"
@@ -9706,15 +9706,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"nuxt-charts@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "nuxt-charts@npm:1.0.2"
+"nuxt-charts@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "nuxt-charts@npm:2.0.0"
   dependencies:
-    "@nuxt/kit": "npm:^3.17.7"
-    "@unovis/ts": "npm:^1.5.2"
-    "@unovis/vue": "npm:^1.5.2"
-    vue-chrts: "npm:1.0.0"
-  checksum: 10c0/4964582e7b3d7493661cd4eb6944ba1c7157428cce1a281197cd13691984cf6e9b3fee1dc0a595f39a2cb4624a20c073b419d66208222f48e63c487ac2fd8c80
+    "@unovis/ts": "npm:^1.6.2"
+    "@unovis/vue": "npm:^1.6.2"
+    vue-chrts: "npm:2.0.0"
+  checksum: 10c0/94cd41514a9a627a50520b11431e0f0d78b60d30e7e1600578edf3662618a9929f435514bf276e5a9e21c1a30b79afba1148b63adefe6b587f203e61b6a97634
   languageName: node
   linkType: hard
 
@@ -13059,12 +13058,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-chrts@npm:1.0.0":
-  version: 1.0.0
-  resolution: "vue-chrts@npm:1.0.0"
+"vue-chrts@npm:2.0.0":
+  version: 2.0.0
+  resolution: "vue-chrts@npm:2.0.0"
   peerDependencies:
     vue: ^3.5.13
-  checksum: 10c0/21f1ca6b7adc50bf6f520a215a89440f302377b94896ecc6c60d9b7fec8a3b97f70fb5dfa30702c380693ea86259aa282b5ed3bc7a297b85a93b761790683adb
+  checksum: 10c0/8bef54aa33f8767fb21a3c11ef60ddd78cbb1ba94c0910dfa2d3bb63aa805e7eeb7496fac04fb6c881970c9f0b2e0029e1e7298400b68371d6ca9f92f4dd4d8c
   languageName: node
   linkType: hard
 

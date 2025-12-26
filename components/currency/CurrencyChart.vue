@@ -32,15 +32,10 @@
         }
     };
  
-    // xFormatter: otrzymuje INDEKS (i) - pozycję w tablicy danych
-    // Używamy go do pobrania daty z chartData[i]
-    // const xFormatter = (i: number) => chartData.value[i]?.effectiveDate || "";
     const xFormatter = (tick: number): string => {
         return chartData.value[tick]?.effectiveDate ?? "";
     };
     
-    // yFormatter: otrzymuje WARTOŚĆ TICKA z osi Y (już jest to wartość z chartData.mid)
-    // Formatujemy wartość liczbową do wyświetlenia na osi Y
     const yFormatter = (tick: number): string => {
         return tick.toFixed(2);
     };
@@ -50,18 +45,11 @@
         tickTextAngle: -45
     };
 
-    // Konfiguracja osi Y
     const yAxisConfig = {
         tickTextAlign: "center" as const,
-        tickFormat: yFormatter,  // Używamy yFormatter do formatowania ticków na osi Y
-        // Tutaj możesz dodać właściwości z AxisConfig
-        // np. tickTextFontSize: "12px",
-        // tickTextColor: "#666",
-        // itd.
+        tickFormat: yFormatter,
     };
 
-    // Uproszczona domena osi Y - biblioteka powinna automatycznie wykrywać wartości,
-    // ale jeśli nie działa, możemy ustawić min/max ręcznie
     const yDomain = computed<[number | undefined, number | undefined]>(() => {
         const midValues = chartData.value
             .map(item => item.mid)

@@ -5,9 +5,6 @@
 </script>
 
 <template>
-    <CurrencyEur />
+    <Currency code="eur" icon="i-circle-flags-european-union"/>
+    <CurrencyChart code="eur" color="#f5a623" color-button="warning" />
 </template>
-
-<style scoped>
-
-</style>

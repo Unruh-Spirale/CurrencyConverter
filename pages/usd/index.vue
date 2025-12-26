@@ -5,9 +5,6 @@
 </script>
 
 <template>
-    <CurrencyUsd />
+    <Currency code="usd" icon="i-circle-flags-us"/>
+    <CurrencyChart code="usd" color="#008000" color-button="success" />
 </template>
-
-<style scoped>
-
-</style>

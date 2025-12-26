@@ -23,10 +23,10 @@
     "@tailwindcss/vite": "^4.1.6",
     "@typescript-eslint/eslint-plugin": "^8.39.1",
     "@typescript-eslint/parser": "^8.39.1",
-    "@unovis/ts": "^1.6.0",
+    "@unovis/ts": "^1.6.2",
     "eslint": "^9.33.0",
     "eslint-plugin-vue": "^10.4.0",
-    "nuxt-charts": "^1.0.2",
+    "nuxt-charts": "^2.0.0",
     "tailwindcss": "^4.1.6",
     "typescript": "^5.8.3",
     "vue-eslint-parser": "^10.2.0"

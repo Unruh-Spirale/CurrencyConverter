@@ -47,7 +47,6 @@
         gbp: {name: "GBP", color: "#0000ff"}
     };
 
-    // const xFormatter = (i: number): string | number => `${chartData.value[i]?.effectiveDate}`;
     const xFormatter = (tick: number): string => {
         return chartData.value[tick]?.effectiveDate;
     };

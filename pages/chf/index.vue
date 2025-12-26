@@ -5,9 +5,6 @@
 </script>
 
 <template>
-    <CurrencyChf />
+    <Currency code="chf" icon="i-circle-flags-ch"/>
+    <CurrencyChart code="chf" color="#ff0000" color-button="error" />
 </template>
-
-<style scoped>
-
-</style>
