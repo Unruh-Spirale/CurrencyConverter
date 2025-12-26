@@ -23,9 +23,9 @@
                 <h1 class="uppercase text-center text-4xl ml-5">Currency converter</h1>
             </NuxtLink>
         </header>
-        <div class="grid grid-cols-14 pt-8">
+        <div class="flex flex-col md:grid md:grid-cols-14 pt-8">
             <nav>
-                <ul class="grid gap-4 uppercase">
+                <ul class="flex flex-row md:grid gap-4 uppercase">
                     <li v-for="nav in buttonNavs">
                         <NuxtLink :to="nav.route">
                             <UButton
@@ -42,7 +42,7 @@
                 </ul>
             </nav>
 
-            <div class="col-span-13 ml-10">
+            <div class="md:col-span-13 md:ml-10">
                 <slot />
             </div>
         </div>
