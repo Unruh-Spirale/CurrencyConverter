@@ -1,0 +1,1 @@
+import{_ as r}from"./DuYD3yLB.js";import{_ as n}from"./COLg_lTB.js";import{f as t,c as a,b as o,F as _,o as s}from"./DVbSD3A5.js";const d=t({__name:"index",setup(m){return(f,i)=>{const c=r,e=n;return s(),a(_,null,[o(c,{code:"chf",icon:"i-circle-flags-ch"}),o(e,{code:"chf",color:"#ff0000","color-button":"error"})],64)}}});export{d as default};

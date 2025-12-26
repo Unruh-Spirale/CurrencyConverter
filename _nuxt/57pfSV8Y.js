@@ -1,0 +1,1 @@
+import{_ as c}from"./DuYD3yLB.js";import{_ as r}from"./COLg_lTB.js";import{f as t,c as a,b as o,F as _,o as s}from"./DVbSD3A5.js";const d=t({__name:"index",setup(m){return(f,p)=>{const e=c,n=r;return s(),a(_,null,[o(e,{code:"gbp",icon:"i-circle-flags-gb"}),o(n,{code:"gbp",color:"#0000ff","color-button":"info"})],64)}}});export{d as default};

@@ -14,12 +14,12 @@ export default defineNuxtConfig({
     },
     ssr: false,
     app: {
-        baseURL: process.env.BASE_URL || (process.env.NODE_ENV === "production" ? "/CurrencyConverter/" : "/"),
+        baseURL: "/CurrencyConverter/",
         buildAssetsDir: "/_nuxt/"
     },
-    router: {
-        options: {
-            hashMode: false
+    nitro: {
+        prerender: {
+            routes: ["/", "/eur", "/usd", "/chf", "/gbp"]
         }
     }
 });
