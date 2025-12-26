@@ -1,10 +1,5 @@
 <script setup lang="ts">
-    import type { CurrencyBuySell } from "~/types/currency";
-
-    const {data: currencyEur90 } = await useFetch<CurrencyBuySell>("http://api.nbp.pl/api/exchangerates/rates/a/eur/last/90/?format=json");
-    const {data: currencyUsd90 } = await useFetch<CurrencyBuySell>("http://api.nbp.pl/api/exchangerates/rates/a/usd/last/90/?format=json");
-    const {data: currencyChf90 } = await useFetch<CurrencyBuySell>("http://api.nbp.pl/api/exchangerates/rates/a/chf/last/90/?format=json");
-    const {data: currencyGbp90 } = await useFetch<CurrencyBuySell>("http://api.nbp.pl/api/exchangerates/rates/a/gbp/last/90/?format=json");
+    const { eur: currencyEur90, usd: currencyUsd90, chf: currencyChf90, gbp: currencyGbp90 } = await useCurrencyRates();
 
     type ChartDataItem = {
         effectiveDate: string;

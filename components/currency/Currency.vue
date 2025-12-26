@@ -13,7 +13,13 @@
     const {data: currency} = await useFetch<CurrencyBuySell>(uriCurrency);
     const {data: currencyMid} = await useFetch<CurrencyBuySell>(uriCurrencyMid);
 
-    const data = ref([
+    interface TableData {
+        buy?: number;
+        sell?: number;
+        average?: number;
+    }
+
+    const data = ref<TableData[]>([
         {
             buy: currency.value?.rates[0].bid,
             sell: currency.value?.rates[0].ask,
